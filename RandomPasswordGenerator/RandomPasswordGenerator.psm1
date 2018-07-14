@@ -16,13 +16,13 @@
         If you want to generate more than one random password, you can specify this parameter. If not specified, the default value is 1.
 
     .PARAMETER PercentLowerCaseLetters
-        Use this parameter if you want to change the structure of the password. If not specified, the default value is 0.3.
+        Use this parameter if you want to change the structure of the password. If not specified, the default value is 0.25.
 
     .PARAMETER PercentUpperCaseLetters
-        Use this parameter if you want to change the structure of the password. If not specified, the default value is 0.3.
+        Use this parameter if you want to change the structure of the password. If not specified, the default value is 0.25.
 
     .PARAMETER PercentNumbers
-        Use this parameter if you want to change the structure of the password. If not specified, the default value is 0.2.
+        Use this parameter if you want to change the structure of the password. If not specified, the default value is 0.3.
 
     .PARAMETER PercentCharacters
         Use this parameter if you want to change the structure of the password. If not specified, the default value is 0.2.
@@ -33,7 +33,7 @@
     .EXAMPLE
         PS> Get-RandomPassword
 
-        This example generates 1 password of 15 characters composed of: 30% upper case letters, 30% lower case letters, 20% numbers and 20% special characters.
+        This example generates 1 password of 15 characters composed of: 25% upper case letters, 25% lower case letters, 30% numbers and 20% special characters.
 
     .EXAMPLE
         PS> Get-RandomPassword -PasswordLength 9
@@ -48,7 +48,7 @@
     .EXAMPLE
         PS> Get-RandomPassword -NoOfPasswords 7000 -OpenInTextFile
 
-        This example generates 7000 passwords with default length (15 characters) and default structure(30% UpperCase letters, 30% LowerCase letters, 20% numbers and 20% special characters. 
+        This example generates 7000 passwords with default length (15 characters) and default structure(25% UpperCase letters, 25% LowerCase letters, 30% numbers and 20% special characters. 
         Then creates and opens a *.txt file with the generated passwords. 
     
     .EXAMPLE
