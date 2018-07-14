@@ -12,7 +12,7 @@
 RootModule = 'RandomPasswordGenerator.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.0'
+ModuleVersion = '1.0.1'
 
 # ID used to uniquely identify this module
 GUID = '5091b26b-ccf6-4abd-8762-9f81c7c8cc71'
